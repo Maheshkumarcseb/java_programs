@@ -4,17 +4,15 @@ public class BubbleSort {
         int[] array = {64, 34, 25, 12, 22, 11, 90};
 
         System.out.println("Original array: ");
-        printArray(array);
-
-        bubbleSort(array);
-
+        printArray(array);     // calling PrintArray method before sorting.
+        bubbleSort(array);    // calling bubbleSort method for sorting element of array.
         System.out.println("\nSorted array: ");
-        printArray(array);
+        printArray(array);      // calling PrintArray method after sorting.
     }
 
-    // Function to perform Bubble Sort
+    // method to perform Bubble Sort
     static void bubbleSort(int[] arr) {
-        int n = arr.length;
+        int n = arr.length;    // storing the array length in n.
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 // Swap if the element found is greater than the next element
@@ -28,10 +26,10 @@ public class BubbleSort {
     }
 
     // Function to print an array
-    static void printArray(int[] arr) {
-        for (int value : arr) {
+    static void printArray(int[] arr) {    // method for priting array.
+        for (int value : arr) {        // for each loop for traverse the array.
             System.out.print(value + " ");
         }
-        System.out.println();
+        System.out.println();  // printing a new line after printing the element of the array.
     }
 }
