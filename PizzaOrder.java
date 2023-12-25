@@ -19,7 +19,6 @@ public class PizzaOrder {
         System.out.println("Order please");
         
     }
-
     private static int getUserChoice(Scanner scanner) {
         System.out.print("Enter choice: ");
         return scanner.nextInt();
@@ -30,10 +29,9 @@ public class PizzaOrder {
             case 1:
                 makeChickenPizza("chicken");
                 break;
-            case 2:
+           case 2:
                 makeCheesePizza("cheese");
                 break;
-           
 
             default:
                 System.out.println("Please select from the menu.");
@@ -48,6 +46,7 @@ public class PizzaOrder {
     private static void makeCheesePizza(String type) {
         System.out.println(type + " pizza ready.");
     }
+    
     
 
     
